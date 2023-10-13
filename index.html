@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>TicketNow</title>
+    
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+    
+    <header>
+        
+        <nav class="navbar contenedor">
+            
+            <div>
+                <a href="#">
+                    <img id="logo_imagen" src=""
+                        alt=>
+                </a>
+            </div>
+            
+            <ul class="nav_link ">
+                <li class="nav_items">
+                    <a href="#" class="active nav_links">Inicio</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#boleteria" class="nav_links">Boleteria</a>
+                </li>
+                <li class="nav_items" id="comprar_entradas">
+                    <a href="#boton_comprar" class="nav_links_comprar">Comprar Boletos</a>
+                </li>
+            
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="boleteria">
+        <h2>Boleteria</h2>
+        <div class="conciertos_contenedor">
+
+            
+            <article id="concierto1">
+                <img class="concierto_img" src="./img/artista-01.jpg">
+                <div class="concierto_info">
+                    <p class="concierto_nombre"> <strong class="artista">WOS</strong> - Despedida Oscuro extasis</p>
+                </div>
+            </article>
+
+            <article id="concierto2">
+                <img class="concierto_img" src="./img/artista-02.png">
+                <div class="concierto_info">
+                    <p class="concierto_nombre"> <strong class="artista">Los Cafres</strong> - Tour Dates</p>
+                </div>
+            </article>
+
+            <article id="concierto3">
+                <img class="concierto_img" src="./img/artista-03.png">
+                <div class="concierto_info">
+                    <p class="concierto_nombre"> <strong class="artista">Memphis La Blusera </strong> - 25th Aniversario
+                    </p>
+                </div>
+            </article>
+
+            <article id="concierto4">
+                <img class="concierto_img" src="./img/artista-04.png">
+                <div class="concierto_info">
+                    <p class="concierto_nombre"> <strong class="artista">Charly Sinfonico </strong> - Musica para volar
+                    </p>
+                </div>
+            </article>
+            
+            <article id="concierto5">
+                <img class="concierto_img" src="./img/artista-05.png">
+                <div class="concierto_info">
+                    <p class="concierto_nombre"> <strong class="artista">Jaf </strong> - 50 Años</p>
+                </div>
+            </article>
+            
+            <article id="concierto6">
+                <img class="concierto_img" src="./img/artista-06.png">
+                <div class="concierto_info">
+                    <p class="concierto_nombre"> <strong class="artista">Nito Mestre </strong> - 50 años de vida</p>
+                </div>
+            </article>
+            
+            <article id="concierto7">
+                <img class="concierto_img" src="./img/artista-07.png">
+                <div class="concierto_info">
+                    <p class="concierto_nombre"> <strong class="artista">Chaqueño Palvecino </strong> - En vivo</p>
+                </div>
+            </article>
+
+            <article id="concierto8">
+                <img class="concierto_img" src="./img/artista-08.png">
+                <div class="concierto_info">
+                    <p class="concierto_nombre"> <strong class="artista"> Jairo</strong> - Despedida de Año </p>
+                </div>
+            </article>
+
+            <article id="concierto9">
+                <img class="concierto_img" src="./img/artista-09.png">
+                <div class="concierto_info">
+                    <p class="concierto_nombre"> <strong class="artista">Ciro y los Persas </strong> - Vuelven a Rosario</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <div class="boton">
+        <button id="boton_comprar" type="button">¡ Comprar Entradas !</button>
+    </div>
+
+    <div id="paso1" class="no_mostrar">
+        <div id="comprar">
+            <h2>Comprar Entradas</h2>
+            <h3 class="pasos">Paso 1</h3>
+            <label class="pasos_instruccion">_Seleccione el Concierto:</label>
+        </div>
+        <div class="paso1">
+            <select id="concierto">
+                <option value="">Seleccionar concierto</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="paso2" class="no_mostrar">
+        <h3 class="pasos">Paso 2</h3>
+        <label class="pasos_instruccion">_Seleccione Fecha </label>
+
+        <div class="selectores">
+            <select id="fecha_concierto">
+            </select>
+        </div>
+    </div>
+
+    <div id="paso3" class="no_mostrar">
+        <h3 class="pasos">Paso 3</h3>
+        <label class="pasos_instruccion">_Seleccione Cantidad de Entradas</label>
+
+        <div class="selectores" id="contendor_entradas">
+            <select id="cantidad_entradas">
+                <option value="0" selected>Seleccione una cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+        <p id="cantidad_parrafo" class="no_mostrar">*La cantidad de entradas ingresadas no se encuentra disponible.</p>
+
+        
+        <div id="siguiente" class="boton no_mostrar">
+            <button id="boton_siguiente" type="button">Siguiente</button>
+        </div>
+
+    </div>
+
+    <div id="paso4" class="no_mostrar">
+        <div class="contenedor_datos">
+            <div>
+                <img src="img/flores.jpg">
+            </div>
+            <div class="form">
+                <form id="datosPersona" class="datos">
+                    <div>
+                        <div id="contenedor_input_nombre">
+                            <label>Nombre:</label>
+                            <input type="text" id="nombre" autocomplete="off" placeholder="Ingrese su nombre..." required>
+                        </div>
+
+                        <div id="contenedor_input_apellido">
+                            <label>Apellido:</label>
+                            <input type="text" id="apellido" autocomplete="off" placeholder="Ingrese su apellido...">
+                        </div>
+                            
+                        <div id="contenedor_input_telefono">
+                            <label>Telefono:</label>
+                            <input type="number" id="telefono" autocomplete="off" placeholder="Ingrese su telefono...">
+                        </div>
+                        
+                        <div id="contenedor_input_email">
+                            <label>Correo:</label>
+                        <input type="email" id="email" pattern=".+@globex\.com" autocomplete="off"
+                            placeholder="Ingrese su correo...">
+                        </div>
+                        
+    
+                        <button type="submit" class="boton_siguiente" id="boton_paso4">Siguiente</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="paso5" class="no_mostrar">
+        <div class="contenedor_pago">
+            <div class="form">
+                <form id="pago" class="pago datos">
+                    <div>
+                        <label>Medio de pago:</label>
+                        <div id="contenedor_tarjeta">
+                            <select id="medio_pago">
+                                <option value="" disabled selected>Tarjeta</option>
+                                <option value="Visa">Visa</option> 
+                                <option value="Mastercard">Mastercard</option> 
+                            </select>
+                        </div>
+
+
+                        <div id="contenedor_numero_tarjeta">
+                            <label>Número de Tarjeta:</label>
+                            <input type="number" id="numero_tarjeta" autocomplete="off" placeholder="Los 16 dígitos">
+                        </div>
+
+                        <div id="contenedor_codigo_seguridad">
+                            <label>Código de Seguridad:</label>
+                            <input type="number" id="codigo_seguridad" autocomplete="off" placeholder="Los 3 dígitos">
+                        </div>
+
+                        <div id="contenedor_titular_tarjeta">
+                            <label>Titular de la tarjeta:</label>
+                            <input type="text" id="titular_tarjeta" autocomplete="off" placeholder="Ingrese titular">    
+                        </div>
+                        
+                        <label>Vencimiento:</label>
+                        <select id="mes_tarjeta">
+                            <option value="0" disabled selected>Mes</option>
+                        </select>
+                        <select id="año_tarjeta">
+                        </select>
+                    </div>
+
+                    <button type="submit" class="boton_pagar" id="pagar">Pagar</button>
+                </form>
+            </div>
+            <div id="muestra_datos">
+                <h4>Resumen de Compra:</h4>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="finalizar_compra" class="no_mostrar">
+        <div class="finalizar_compra">
+            <div id="finalizar_compra_contenedor">
+                <i class="fa-solid fa-circle-check finalizar_compra_icon"></i>
+                <p class="finalizar_compra_texto">¡Gracias Por Tu Compra!</p>
+            </div>
+            <p class="finalizar_compra_aviso">A continuación, recibira toda la información a su cuenta de correo. ¡A disfrutar de la música! </p>
+        </div>
+        <div class="volver">
+            <a href="#" class="volver_link" id="volver" ><i class="fa-solid fa-arrow-left volver_icon"></i> Volver al inicio...</a>
+        </div>
+    </div>
+
+    
+    <div class="separacion">
+        <p class="nombreMarca">TicketNow.</p>
+    </div>
+
+
+    <footer id="footer">
+        <div class="footer_caja">
+            <div class="footer_caja_logo">
+                <img src="img/logoPalabraN&B.png"
+                    alt="">
+            </div>
+
+            <div class="footer_caja_indice">
+                <p class="footer_indice_parrafo">Indice</p>
+                <ul class="footer_link ">
+                    <li class="footer_items">
+                        <a href="#" class="active footer_links">Inicio</a>
+                    </li>
+                    <li class="footer_items">
+                        <a href="#boleteria" class="active footer_links">Boleteria</a>
+                    </li>
+                    <li class="footer_items">
+                        <a href="#boton_comprar" class="footer_links">Comprar Boletos</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer_caja_ubicacion">
+                <p class="footer_ubicacion_parrafo">ubicacion</p>
+                <i class="fa-sharp fa-solid fa-location-dot footer_ubicacion_icono"></i>
+                <p class="footer_ubicacion_calle">AV.Santa Fe 3069 - C.A.B.A</p>
+            </div>
+
+            <div class="redes">
+                <a href="#" class="redes_link">
+                    <i class="fa-brands fa-instagram redes_link_icono bote"></i>
+                </a>
+                <a href="#" class="redes_link">
+                    <i class="fa-regular fa-envelope redes_link_icono bote"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer_caja2">
+        
+
+
+    </footer>
+
+    
+    <script src="./js/conciertos.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
